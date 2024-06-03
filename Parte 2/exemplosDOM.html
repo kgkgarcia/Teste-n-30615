@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exemplos de Seleção de Elementos DOM</title>
+</head>
+<body>
+    <div id="meuDiv">Este é um exemplo de div.</div>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <p class="destaque">Este é um parágrafo destacado.</p>
+    <p>Este é um parágrafo comum.</p>
+
+    <script>
+        // Exemplo utilizando getElementById
+        var div = document.getElementById("meuDiv");
+        div.innerHTML = "Este é um exemplo de div alterado.";
+
+        // Exemplo utilizando getElementsByTagName
+        var itensLista = document.getElementsByTagName("li");
+        itensLista[0].textContent = "Item 1 (alterado)";
+
+        // Exemplo utilizando getElementsByClassName
+        var elementosDestaque = document.getElementsByClassName("destaque");
+        elementosDestaque[0].style.fontWeight = "bold";
+    </script>
+</body>
+</html>
